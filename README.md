@@ -4,7 +4,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project is hosted on [Formgenerate](https://formgenerate.netlify.app)
 
 A form Generator component that can be used to generate a basic form.
-It takes in two props the form fields data and the function that handles the form submission
+It takes in two props the form fields data and the function that handles the form submission.
+
+### Using formgenerate
+```jsx
+import FormGenerator from '../form-generator/form_generator'
+    function App() {
+        return <FormGenerator data="Your Data" onSubmit="Your Handle Submit function" />
+    }
+
+    export default App;
+```
 
 ### Form fields data structure
 ```jsx
