@@ -30,11 +30,15 @@ function FormGenerator(props) {
             <h1 className="form_title">{props.data.title}</h1>
             {props.data.description ? <p className="form_description">{props.data.description}</p> : null}
             {
+                /* Mapping through the data fields to return form field label and field input depending on its type */
+
                 props.data.fields.map((entry, index) => {
                     return (
                         <div className="form_group" key={index}>
                             <label className="form_group_label">{entry.label}</label>
                             {
+                                //React's conditional rendering based on entry type
+
                                 entry.type === 'text' ? (
                                     <>
                                         <input className="form_group_input" type="text" name={entry.label} ref={register(entry.validation)} />
