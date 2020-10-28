@@ -2,25 +2,6 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import './form_generator.css'
 
-// function SwitchEntry (props) {
-//     switch (props.entries.type) {
-//         case 'text':
-//             return <input type="text" />
-//         case 'date':
-//             return <input type="date" />
-//         case 'number':
-//             return <input type="number" />
-//         case 'longtext':
-//             return <textarea />
-//         case 'radio':
-//             return (
-//                 <input type="radio" />
-//             )
-
-//         default:
-//             break;
-//     }
-// }
 
 function FormGenerator(props) {
     const { register, handleSubmit, errors } = useForm();
